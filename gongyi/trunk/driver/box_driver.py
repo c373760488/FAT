@@ -19,19 +19,19 @@ from fastAutoTest.utils.logger import Log
 
 class boxDriver(object):
 
-    def __init__(self,device=None):
-        self.logger=Log().getLogger()
-        if device==None:
-            self.device=self.get_device_id(device)
+    def __init__(self, device=None):
+        self.logger = Log().getLogger()
+        if device == None:
+            self.device = self.get_device_id(device)
         else:
-            self.device=device
+            self.device = device
         # os.system('adb shell am start com.github.uiautomator/.MainActivity')
         # time.sleep(1)
         self.d = uiautomator2.connect_usb(self.device)
-        self.sdk=int(self.d.device_info['sdk'])
+        self.sdk = int(self.d.device_info['sdk'])
 
-    def get_device_id(self,device):
-        if device==None:
+    def get_device_id(self, device):
+        if device == None:
             devicesList = AdbHelper.listDevices(ignoreUnconnectedDevices=True)
             devicesCount = len(devicesList)
             if devicesCount <= 0:
@@ -43,13 +43,93 @@ class boxDriver(object):
                 self.device = devicesList[0]
                 print '检测到多个设备，默认使用第一个'
 
-    def wx_keyboard(self,key):
+    def u_click(self, timeout=5, **kwargs):
+        """
+        uiautomaor2 的click
+        :param kwargs:
+        :return:
+        """
+        times = 0
+        while times < timeout:
+            if self.u_exists(**kwargs):
+                break
+            else:
+                time.sleep(1)
+                times += 1
+        if self.u_exists(**kwargs):
+            self.d(**kwargs).click(timeout)
+        else:
+            raise TypeError('元素不存在')
+
+    def u_exists(self, **kwargs):
+        """
+        uiautomaor2 ,查看元素是否存在
+        :param kwargs:
+        :return:
+        """
+        return self.d(**kwargs).exists()
+
+    def u_send_keys(self, text, **kwargs):
+        """
+         uiautomaor2 ,输入text
+        :param text:
+        :param kwargs:
+        :return:
+        """
+        self.d(**kwargs).send_keys(text)
+
+    def u_set_text(self, text, **kwargs):
+        """
+         uiautomaor2 ,输入text
+        :param text:
+        :param kwargs:
+        :return:
+        """
+        self.d(**kwargs).set_text(text)
+
+    def u_stop_app(self,app):
+        """
+        关闭app
+        :param app:
+        :return:
+        """
+        self.d.app_stop(app)
+
+    def u_start_app(self, pkg_name,
+                    activity=None,
+                    extras={},
+                    wait=True,
+                    stop=False,
+                    unlock=False):
+        """
+        启动app
+        :param pkg_name:
+        :param activity:
+        :param extras:
+        :param wait:
+        :param stop:
+        :param unlock:
+        :return:
+        """
+        self.d.app_start(pkg_name,activity,extras,wait,stop,unlock)
+
+    def u_stop_all_app(self,excludes=[]):
+        """
+        关闭所有应用
+        :param excludes: 不想关闭的应用list
+        :return:
+        """
+        self.d.app_stop_all(excludes)
+
+
+
+    def wx_keyboard(self, key):
         """
         微信支付键盘
         :param key:
         :return:
         """
-        if key=='1':
+        if key == '1':
             self.d.click(0.164, 0.671)
         elif key == '2':
             self.d.click(0.495, 0.675)
@@ -75,20 +155,17 @@ class boxDriver(object):
             raise TypeError('key error')
 
 
-
-
 class h5Driver(boxDriver):
 
-    def __init__(self,device=None):
-        super(h5Driver,self).__init__(device)
-
+    def __init__(self, device=None):
+        super(h5Driver, self).__init__(device)
 
     def load_h5Driver(self):
-        self.h5driver = H5Driver(self.d,self.device)
+        self.h5driver = H5Driver(self.d, self.device)
         self.h5driver.initDriver()
         return self.h5driver
 
-    def click_by_text(self,text):
+    def click_by_text(self, text):
         """
         通过文本点击
         :param text:
@@ -104,7 +181,7 @@ class h5Driver(boxDriver):
         """
         self.h5driver.clickElementByXpath(xp)
 
-    def get_text_by_xp(self,xp):
+    def get_text_by_xp(self, xp):
         """
         通过xpath定位点击
         :param xp:
@@ -112,7 +189,7 @@ class h5Driver(boxDriver):
         """
         return self.h5driver.getElementTextByXpath(xp)
 
-    def long_click_by_xp(self,xp):
+    def long_click_by_xp(self, xp):
         """
         通过xpath长按点击
         :param xp:
@@ -120,7 +197,7 @@ class h5Driver(boxDriver):
         """
         self.h5driver.longClickElementByXpath(xp)
 
-    def double_click_by_xp(self,xp):
+    def double_click_by_xp(self, xp):
         """
         通过xpath双击
         :param xp:
@@ -128,7 +205,7 @@ class h5Driver(boxDriver):
         """
         self.h5driver.repeatedClickElementByXpath(xp)
 
-    def scroll_To_Xpath(self,xp):
+    def scroll_To_Xpath(self, xp):
         """
         滚动直xpath可见
         :param xp:
@@ -136,7 +213,7 @@ class h5Driver(boxDriver):
         """
         self.h5driver.scrollToElementByXpath(xp)
 
-    def type_text(self,xp,text):
+    def type_text(self, xp, text):
         """
         清除输入框内容，输入文字
         :param xp:
@@ -145,7 +222,7 @@ class h5Driver(boxDriver):
         """
         self.h5driver.clickElementByXpath(xp)
         self.h5driver.clearInputTextByXpath(xp)
-        self.h5driver.textElementByXpath(xp,text)
+        self.h5driver.textElementByXpath(xp, text)
 
     def back_page(self):
         """
@@ -155,7 +232,7 @@ class h5Driver(boxDriver):
 
         self.h5driver.returnLastPage()
 
-    def isElementExist(self,xp):
+    def isElementExist(self, xp):
         """
         判断元素是否存在
         :param xp:
@@ -163,7 +240,7 @@ class h5Driver(boxDriver):
         """
         return self.h5driver.isElementExist(xp)
 
-    def open_url(self,url):
+    def open_url(self, url):
         """
         打开指定url，（h5页面已被打卡）
         :param url:
@@ -178,7 +255,7 @@ class h5Driver(boxDriver):
         """
         self.h5driver.closeWindow()
 
-    def send_Script(self,script):
+    def send_Script(self, script):
         """
         发送js命令
         :param script:
@@ -193,23 +270,24 @@ class h5Driver(boxDriver):
         """
         return self.h5driver.getCurrentPageUrl()
 
-    def getImage(self,time):
+    def getImage(self, time):
         '''
         截取图片,并保存在images文件夹
         :return: 无
         '''
         if time != '':
-            imgPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))+'\\reports\\images\\%s.png' % time
+            imgPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + '\\reports\\images\\%s.png' % time
             self.d.screenshot(imgPath)
         else:
             pass
 
+
 class wxDriver(boxDriver):
-    def __init__(self,):
-        super(wxDriver,self).__init__()
+    def __init__(self, ):
+        super(wxDriver, self).__init__()
 
     def load_h5Driver(self):
-        self.xcxdriver = WxDriver(self.d,self.device)
+        self.xcxdriver = WxDriver(self.d, self.device)
         self.xcxdriver.initDriver()
         return self.xcxdriver
 
@@ -229,7 +307,7 @@ class wxDriver(boxDriver):
         """
         self.xcxdriver.clickElementByXpath(xp)
 
-    def get_text_by_xp(self,xp):
+    def get_text_by_xp(self, xp):
         """
         通过xpath定位点击
         :param xp:
@@ -237,7 +315,7 @@ class wxDriver(boxDriver):
         """
         return self.xcxdriver.getElementTextByXpath(xp)
 
-    def scroll_To_Xpath(self,xp):
+    def scroll_To_Xpath(self, xp):
         """
         滚动直xpath可见
         :param xp:
@@ -245,7 +323,7 @@ class wxDriver(boxDriver):
         """
         self.xcxdriver.scrollToElementByXpath(xp)
 
-    def type_text(self,xp,text):
+    def type_text(self, xp, text):
         """
         输入文字(还没有试过清除有没有用)
         :param xp:
@@ -253,7 +331,7 @@ class wxDriver(boxDriver):
         :return:
         """
         self.xcxdriver.clearInputTextByXpath(xp)
-        self.xcxdriver.textElementByXpath(xp,text)
+        self.xcxdriver.textElementByXpath(xp, text)
 
     def back_page(self):
         """
@@ -263,7 +341,7 @@ class wxDriver(boxDriver):
 
         self.xcxdriver.returnLastPage()
 
-    def isElementExist(self,xp):
+    def isElementExist(self, xp):
         """
         判断元素是否存在
         :param xp:
@@ -279,12 +357,11 @@ class wxDriver(boxDriver):
         self.xcxdriver.close()
 
 
-
 if __name__ == '__main__':
     # package_name = 'com.tencent.mm'
     # runCommand('adb shell pm clear %s' % package_name)
-    a=h5Driver()
-    print a.d.device_info
+    # a=h5Driver()
+    a = uiautomator2.connect()
+    print a.device_info
     # a.d(className="android.widget.RelativeLayout", instance=14).click()
-    a.d(xpath="//android.widget.TextView[@text='我']").click()
-
+    # a.d(xpath="//android.widget.TextView[@text='我']").click()

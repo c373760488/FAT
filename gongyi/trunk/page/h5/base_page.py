@@ -13,7 +13,11 @@ class basePage(object):
         self.h5_driver = h5Driver
 
     def close_wx(self):
-        self.h5_driver.d.app_stop('com.tencent.mm')
+        """
+        关闭所有应用
+        :return:
+        """
+        self.h5_driver.u_stop_all_app()
 
     def open_wx(self):
 
@@ -33,29 +37,29 @@ class basePage(object):
         """
         if self.h5_driver.sdk>=28:
             times=0
-            while not self.h5_driver.d(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout", instance=3).exists and not self.h5_driver.d(text="登录").exists and times<10:
+            while not self.h5_driver.u_exists(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout", instance=3) and not self.h5_driver.u_exists(text="登录") and times<10:
                 time.sleep(1)
                 times+=1
-            if not self.h5_driver.d(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout", instance=3).exists:
-                self.h5_driver.d(text="登录").click()
-                self.h5_driver.d(text="用微信号/QQ号/邮箱登录").click()
-                self.h5_driver.d(text="请填写微信号/QQ号/邮箱").send_keys(acc)
-                self.h5_driver.d(resourceId="com.tencent.mm:id/ji", className="android.widget.EditText", instance=1).set_text(pwd)
-                self.h5_driver.d(text='登录').click()
+            if not self.h5_driver.u_exists(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout", instance=3):
+                self.h5_driver.u_click(text="登录")
+                self.h5_driver.u_click(text="用微信号/QQ号/邮箱登录")
+                self.h5_driver.u_send_keys(acc,text="请填写微信号/QQ号/邮箱")
+                self.h5_driver.u_set_text(pwd,resourceId="com.tencent.mm:id/ji", className="android.widget.EditText", instance=1)
+                self.h5_driver.u_click(text='登录')
             else:
                 pass
         else:
             times = 0
-            while not self.h5_driver.d(text='我').exists and not self.h5_driver.d(text="登录").exists and times < 10:
+            while not self.h5_driver.u_exists(text='我') and not self.h5_driver.u_exists(text="登录") and times < 10:
                 time.sleep(1)
                 times += 1
-            if not self.h5_driver.d(text='我').exists:
+            if not self.h5_driver.u_exists(text='我'):
                 self.h5_driver.d(text="登录").click()
-                self.h5_driver.d(text="用微信号/QQ号/邮箱登录").click()
-                self.h5_driver.d(text="请填写微信号/QQ号/邮箱").send_keys(acc)
-                self.h5_driver.d(resourceId="com.tencent.mm:id/ji", className="android.widget.EditText",
-                                 instance=1).set_text(pwd)
-                self.h5_driver.d(text='登录').click()
+                self.h5_driver.u_click(text="用微信号/QQ号/邮箱登录")
+                self.h5_driver.u_send_keys(acc,text="请填写微信号/QQ号/邮箱")
+                self.h5_driver.u_set_text(pwd,resourceId="com.tencent.mm:id/ji", className="android.widget.EditText",
+                                 instance=1)
+                self.h5_driver.u_click(text='登录')
             else:
                 pass
 
@@ -66,16 +70,16 @@ class basePage(object):
         '''
         times=0
         if self.h5_driver.sdk>=28:
-            self.h5_driver.d(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout", instance=3).click()
+            self.h5_driver.u_click(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout", instance=3)
         else:
-            self.h5_driver.d(text='我').click()
-        self.h5_driver.d(text='钱包').click()
-        self.h5_driver.d(text='腾讯公益').click(timeout=5)
-        while not self.h5_driver.d(text='腾讯公益',resourceId='android:id/text1').exists and times<20:
+            self.h5_driver.u_click(text='我')
+        self.h5_driver.u_click(text='钱包')
+        self.h5_driver.u_click(timeout=5,text='腾讯公益')
+        while not self.h5_driver.u_exists(text='腾讯公益',resourceId='android:id/text1') and times<20:
             time.sleep(1)
             times += 1
             if times >6:
-                self.h5_driver.d(text='腾讯公益').click()
+                self.h5_driver.u_click(text='腾讯公益')
 
     def open_gyh5(self,acc,pwd):
         """
@@ -125,17 +129,17 @@ class basePage(object):
         :return:
         """
         times=0
-        while not self.h5_driver.d(text='请输入支付密码').exists and times<10:
+        while not self.h5_driver.u_exists(text='请输入支付密码') and times<10:
             time.sleep(0.5)
             times+=1
         for i in str(pwd):
             self.h5_driver.wx_keyboard(i)
         try:
             #小米手机有时候跳出支付风险提示
-            self.h5_driver.d(text='仍然支付').click(timeout=7)
+            self.h5_driver.u_click(timeout=7,text='仍然支付')
         except:
             pass
-        self.h5_driver.d(text='完成').click(timeout=5)
+        self.h5_driver.u_click(timeout=5,text='完成')
 
     def get_pay_value(self):
         """
@@ -143,7 +147,7 @@ class basePage(object):
         :return:
         """
         times=0
-        while not self.h5_driver.d(text='请输入支付密码').exists and times<10:
+        while not self.h5_driver.u_exists(text='请输入支付密码') and times<10:
             time.sleep(0.5)
             times+=1
 
@@ -152,6 +156,6 @@ class basePage(object):
         一起捐创建后分享操作
         :return:
         """
-        self.h5_driver.d(resourceId="com.tencent.mm:id/j1").click()
-        self.h5_driver.d(resourceId="com.tencent.mm:id/cj", text=u"发送给朋友").click()
-        self.h5_driver.d(resourceId="com.tencent.mm:id/jc").click()
+        self.h5_driver.u_click(resourceId="com.tencent.mm:id/j1")
+        self.h5_driver.u_click(resourceId="com.tencent.mm:id/cj", text=u"发送给朋友")
+        self.h5_driver.u_click(resourceId="com.tencent.mm:id/jc")

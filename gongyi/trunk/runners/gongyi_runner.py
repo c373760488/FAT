@@ -15,7 +15,7 @@ class gongyiRunner:
         # for i in range(7):
         #     test_suite.addTest(ljTest('test_%d' % (i+1)))
         # test_suite.addTest(aa('test_1'))
-        test_suite.addTest(ljTest('test_6'))
+        test_suite.addTest(ljTest('test_5'))
         report_path=os.path.abspath(os.path.dirname(os.path.dirname(__file__)))+'\\reports\\gongyi_test_report_%s.html' % timestrmap
         report_file = open(report_path, mode='wb')
         test_runner = HTMLTestRunner(stream=report_file,
