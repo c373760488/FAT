@@ -27,8 +27,20 @@ class boxDriver(object):
             self.device = device
         # os.system('adb shell am start com.github.uiautomator/.MainActivity')
         # time.sleep(1)
-        self.d = uiautomator2.connect_usb(self.device)
+        self.d = self.u_connect(self.device)
         self.sdk = int(self.d.device_info['sdk'])
+
+    def u_connect(self,device):
+        """
+        uiautomator2连接手机
+        :param device:
+        :return:
+        """
+        try:
+            d=uiautomator2.connect_usb(device)
+        except:
+            raise TypeError('uiautomator连接失败')
+        return d
 
     def get_device_id(self, device):
         if device == None:
@@ -42,6 +54,14 @@ class boxDriver(object):
             else:
                 self.device = devicesList[0]
                 print '检测到多个设备，默认使用第一个'
+
+    def u_get_app_version(self,app):
+        """
+        获取app版本号
+        :param app:
+        :return:
+        """
+        return self.d.app_info(app)['versionName']
 
     def u_click(self, timeout=5, **kwargs):
         """

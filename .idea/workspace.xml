@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="870d9303-4104-49e7-a5a8-ea4d31e28507" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/FAT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FAT.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gongyi/trunk/tests/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/tests/test3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,39 +20,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_lj_test_ljTest.coverage" NAME="Unittests for lj_test.ljTest Coverage Results" MODIFIED="1545710245704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
-    <SUITE FILE_PATH="coverage/FAT$gongyi_runner.coverage" NAME="gongyi_runner Coverage Results" MODIFIED="1546354111891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/runners" />
-    <SUITE FILE_PATH="coverage/FAT$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1546253879459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_ljTest_test_01.coverage" NAME="Unittests for test2.ljTest.test_01 Coverage Results" MODIFIED="1545631593227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
-    <SUITE FILE_PATH="coverage/FAT$html_test_runner.coverage" NAME="html_test_runner Coverage Results" MODIFIED="1545916058951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_lj_test_ljTest_test_01.coverage" NAME="Unittests for lj_test.ljTest.test_01 Coverage Results" MODIFIED="1545708244431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest.coverage" NAME="Unittests for yqj_test.ljTest Coverage Results" MODIFIED="1545743553965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test1_aa_test_3.coverage" NAME="Unittests for test1.aa.test_3 Coverage Results" MODIFIED="1546090425984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_ljTest.coverage" NAME="Unittests for test2.ljTest Coverage Results" MODIFIED="1545619172743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
-    <SUITE FILE_PATH="coverage/FAT$base_page.coverage" NAME="base_page Coverage Results" MODIFIED="1546156490949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/page/h5" />
+    <SUITE FILE_PATH="coverage/FAT$gongyi_runner.coverage" NAME="gongyi_runner Coverage Results" MODIFIED="1546397393432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/runners" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_TgTest1_test_01.coverage" NAME="Unittests for test2.TgTest1.test_01 Coverage Results" MODIFIED="1545312585916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
     <SUITE FILE_PATH="coverage/FAT$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1546185998549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$wxEngine.coverage" NAME="wxEngine Coverage Results" MODIFIED="1546190989403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/wx" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest_test_2.coverage" NAME="Unittests for yqj_test.ljTest.test_2 Coverage Results" MODIFIED="1545743462780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$box_driver.coverage" NAME="box_driver Coverage Results" MODIFIED="1546351982883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
     <SUITE FILE_PATH="coverage/FAT$main.coverage" NAME="main Coverage Results" MODIFIED="1545813697794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk" />
+    <SUITE FILE_PATH="coverage/FAT$wxEngine.coverage" NAME="wxEngine Coverage Results" MODIFIED="1546190989403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/wx" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest_test_1.coverage" NAME="Unittests for yqj_test.ljTest.test_1 Coverage Results" MODIFIED="1545742905508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest_test_01.coverage" NAME="Unittests for yqj_test.ljTest.test_01 Coverage Results" MODIFIED="1545656045097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
     <SUITE FILE_PATH="coverage/FAT$Unittests_in_test2_py.coverage" NAME="Unittests in test2.py Coverage Results" MODIFIED="1545813272372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test1_aa.coverage" NAME="Unittests for test1.aa Coverage Results" MODIFIED="1546090502805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_in_lj_test_py.coverage" NAME="Unittests in lj_test.py Coverage Results" MODIFIED="1545718911976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_TgTest1.coverage" NAME="Unittests for test2.TgTest1 Coverage Results" MODIFIED="1545306908730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_in_test1_py.coverage" NAME="Unittests in test1.py Coverage Results" MODIFIED="1546090395289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$lj_page.coverage" NAME="lj_page Coverage Results" MODIFIED="1546191433784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/page/h5" />
-    <SUITE FILE_PATH="coverage/FAT$box_driver__1_.coverage" NAME="box_driver (1) Coverage Results" MODIFIED="1545304433472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
-    <SUITE FILE_PATH="coverage/FAT$lj_test.coverage" NAME="lj_test Coverage Results" MODIFIED="1546353207800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$uam_driver__1_.coverage" NAME="uam_driver (1) Coverage Results" MODIFIED="1545215102566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
     <SUITE FILE_PATH="coverage/FAT$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1546090366417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
     <SUITE FILE_PATH="coverage/FAT$h5Engine.coverage" NAME="h5Engine Coverage Results" MODIFIED="1546098712613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5" />
-    <SUITE FILE_PATH="coverage/FAT$box_driver.coverage" NAME="box_driver Coverage Results" MODIFIED="1546351982883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_in_yqj_test_py.coverage" NAME="Unittests in yqj_test.py Coverage Results" MODIFIED="1545741726619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_TgTest1_test_01.coverage" NAME="Unittests for test2.TgTest1.test_01 Coverage Results" MODIFIED="1545312585916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest_test_1.coverage" NAME="Unittests for yqj_test.ljTest.test_1 Coverage Results" MODIFIED="1545742905508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
     <SUITE FILE_PATH="coverage/FAT$uam_driver.coverage" NAME="uam_driver Coverage Results" MODIFIED="1544602530795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/base" />
-    <SUITE FILE_PATH="coverage/FAT$case.coverage" NAME="case Coverage Results" MODIFIED="1546088467260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/Python27/Lib/unittest" />
-    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest_test_01.coverage" NAME="Unittests for yqj_test.ljTest.test_01 Coverage Results" MODIFIED="1545656045097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
+    <SUITE FILE_PATH="coverage/FAT$base_page.coverage" NAME="base_page Coverage Results" MODIFIED="1546156490949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/page/h5" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test1_aa.coverage" NAME="Unittests for test1.aa Coverage Results" MODIFIED="1546090502805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_in_test1_py.coverage" NAME="Unittests in test1.py Coverage Results" MODIFIED="1546090395289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_ljTest.coverage" NAME="Unittests for test2.ljTest Coverage Results" MODIFIED="1545619172743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
+    <SUITE FILE_PATH="coverage/FAT$lj_test.coverage" NAME="lj_test Coverage Results" MODIFIED="1546353207800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$uam_driver__1_.coverage" NAME="uam_driver (1) Coverage Results" MODIFIED="1545215102566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
+    <SUITE FILE_PATH="coverage/FAT$html_test_runner.coverage" NAME="html_test_runner Coverage Results" MODIFIED="1545916058951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_lj_test_ljTest_test_01.coverage" NAME="Unittests for lj_test.ljTest.test_01 Coverage Results" MODIFIED="1545708244431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
     <SUITE FILE_PATH="coverage/FAT$yqj_page.coverage" NAME="yqj_page Coverage Results" MODIFIED="1545742415777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/page/h5" />
+    <SUITE FILE_PATH="coverage/FAT$case.coverage" NAME="case Coverage Results" MODIFIED="1546088467260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/Python27/Lib/unittest" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest.coverage" NAME="Unittests for yqj_test.ljTest Coverage Results" MODIFIED="1545743553965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_in_lj_test_py.coverage" NAME="Unittests in lj_test.py Coverage Results" MODIFIED="1545718911976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test1_aa_test_3.coverage" NAME="Unittests for test1.aa.test_3 Coverage Results" MODIFIED="1546090425984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$box_driver__1_.coverage" NAME="box_driver (1) Coverage Results" MODIFIED="1545304433472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
+    <SUITE FILE_PATH="coverage/FAT$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1546396239760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_yqj_test_ljTest_test_2.coverage" NAME="Unittests for yqj_test.ljTest.test_2 Coverage Results" MODIFIED="1545743462780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_lj_test_ljTest.coverage" NAME="Unittests for lj_test.ljTest Coverage Results" MODIFIED="1545710245704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
+    <SUITE FILE_PATH="coverage/FAT$lj_page.coverage" NAME="lj_page Coverage Results" MODIFIED="1546397003643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/page/h5" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_ljTest_test_01.coverage" NAME="Unittests for test2.ljTest.test_01 Coverage Results" MODIFIED="1545631593227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_TgTest1.coverage" NAME="Unittests for test2.TgTest1 Coverage Results" MODIFIED="1545306908730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
+    <SUITE FILE_PATH="coverage/FAT$Unittests_in_yqj_test_py.coverage" NAME="Unittests in yqj_test.py Coverage Results" MODIFIED="1545741726619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="472430606">
@@ -196,19 +197,46 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1862477363">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="251" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="251" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/lj_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="96" column="39" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
+            <state relative-caret-position="2047">
+              <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
               <folding>
                 <element signature="e#24#61#0" expanded="true" />
-                <marker date="1546353679760" expanded="true" signature="724:763" ph="..." />
-                <marker date="1546353679760" expanded="true" signature="1922:1931" ph="..." />
-                <marker date="1546353679760" expanded="true" signature="2180:2434" ph="..." />
               </folding>
             </state>
           </provider>
@@ -217,17 +245,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="1449">
+              <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/html_test_runner.py">
+        <entry file="file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5WebSocketDebugUrlFetcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="389" column="22" selection-start-line="389" selection-start-column="22" selection-end-line="389" selection-end-column="22" />
+            <state relative-caret-position="3335">
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
             </state>
           </provider>
         </entry>
@@ -235,22 +263,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="115" column="22" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="22" />
+            <state relative-caret-position="4186">
+              <caret line="187" column="8" selection-start-line="187" selection-start-column="8" selection-end-line="187" selection-end-column="8" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
-                <marker date="1546354057841" expanded="true" signature="608:613" ph="..." />
-                <marker date="1546354057841" expanded="true" signature="2291:3267" ph="..." />
+                <marker date="1546396336636" expanded="true" signature="1043:1278" ph="..." />
+                <marker date="1546396336636" expanded="true" signature="1759:1894" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Program Files/Anaconda3/envs/python2/Lib/site-packages/uiautomator2/__init__.py">
+        <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/test3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="957" column="27" lean-forward="true" selection-start-line="957" selection-start-column="27" selection-end-line="957" selection-end-column="38" />
+            <state relative-caret-position="115">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://C:/Python27/Lib/site-packages/uiautomator2/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="686">
+              <caret line="1279" column="20" lean-forward="true" selection-start-line="1279" selection-start-column="20" selection-end-line="1279" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -258,13 +295,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding>
-                <marker date="1546354057951" expanded="true" signature="63:68" ph="..." />
-                <marker date="1546354057951" expanded="true" signature="492:498" ph="..." />
-                <marker date="1546354057951" expanded="true" signature="4227:4426" ph="..." />
-              </folding>
+            <state relative-caret-position="1771">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -272,17 +304,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/main_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="460">
               <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="46">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -382,15 +414,15 @@
         <option value="$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5PageOperator.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/wx/wxEngine.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/lib/unittest/case.py" />
-        <option value="$PROJECT_DIR$/gongyi/trunk/tests/test3.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5Engine.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/driver/html_test_runner.py" />
         <option value="C:/Python27/Lib/site-packages/fastAutoTest/core/h5/h5Engine.py" />
-        <option value="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/tests/lj_test.py" />
-        <option value="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py" />
+        <option value="$PROJECT_DIR$/gongyi/trunk/tests/test3.py" />
+        <option value="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" />
+        <option value="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" />
       </list>
     </option>
   </component>
@@ -433,28 +465,6 @@
               <item name="FAT" type="462c0819:PsiDirectoryNode" />
               <item name="gongyi" type="462c0819:PsiDirectoryNode" />
               <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="driver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FAT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FAT" type="462c0819:PsiDirectoryNode" />
-              <item name="gongyi" type="462c0819:PsiDirectoryNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FAT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FAT" type="462c0819:PsiDirectoryNode" />
-              <item name="gongyi" type="462c0819:PsiDirectoryNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="h5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FAT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FAT" type="462c0819:PsiDirectoryNode" />
-              <item name="gongyi" type="462c0819:PsiDirectoryNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -463,13 +473,6 @@
               <item name="gongyi" type="462c0819:PsiDirectoryNode" />
               <item name="trunk" type="462c0819:PsiDirectoryNode" />
               <item name="runners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FAT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FAT" type="462c0819:PsiDirectoryNode" />
-              <item name="gongyi" type="462c0819:PsiDirectoryNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -516,28 +519,6 @@
     <configuration name="gongyi_test_report_20190101_22.39.24.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FAT/gongyi/trunk/reports/gongyi_test_report_20190101_22.39.24.html">
       <method v="2" />
     </configuration>
-    <configuration name="box_driver" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FAT" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gongyi/trunk/driver" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="gongyi_runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FAT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -552,6 +533,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lj_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FAT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gongyi/trunk/page/h5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -608,16 +611,16 @@
       <item itemvalue="Python.gongyi_runner" />
       <item itemvalue="Python.test3" />
       <item itemvalue="Python.lj_test" />
-      <item itemvalue="Python.box_driver" />
       <item itemvalue="JavaScript Debug.gongyi_test_report_20190101_22.39.24.html" />
+      <item itemvalue="Python.lj_page" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.gongyi_runner" />
+        <item itemvalue="Python.lj_page" />
+        <item itemvalue="Python.test3" />
         <item itemvalue="JavaScript Debug.gongyi_test_report_20190101_22.39.24.html" />
         <item itemvalue="Python.lj_test" />
-        <item itemvalue="Python.box_driver" />
-        <item itemvalue="Python.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -677,8 +680,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="0" width="1913" height="1100" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24662709" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25202376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -689,7 +693,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32913843" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286334" />
@@ -761,11 +765,6 @@
           <option name="timeStamp" value="317" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/common/network/shortLiveWebSocket.py</url>
-          <line>154</line>
-          <option name="timeStamp" value="352" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
           <line>131</line>
           <option name="timeStamp" value="355" />
@@ -792,43 +791,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py</url>
-          <line>22</line>
+          <line>21</line>
           <option name="timeStamp" value="360" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py</url>
-          <line>27</line>
+          <line>26</line>
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py</url>
-          <line>28</line>
+          <line>27</line>
           <option name="timeStamp" value="362" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="363" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="364" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="365" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="366" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
@@ -846,11 +820,6 @@
           <option name="timeStamp" value="372" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="374" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
           <line>74</line>
           <option name="timeStamp" value="375" />
@@ -859,6 +828,21 @@
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
           <line>71</line>
           <option name="timeStamp" value="376" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5WebSocketDebugUrlFetcher.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="377" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5WebSocketDebugUrlFetcher.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5WebSocketDebugUrlFetcher.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="379" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -911,13 +895,6 @@
     <entry file="file://D:/Program Files/Anaconda3/envs/python2/Lib/site-packages/uiautomator2/__main__.py" />
     <entry file="file://D:/Program Files/Anaconda3/envs/python2/Lib/site-packages/uiautomator2/version.py" />
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20181230_22.55.21.png" />
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5WebSocketDebugUrlFetcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Program Files/Anaconda3/envs/python2/Tools/Scripts/texi2html.py" />
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20181230_23.15.17.png" />
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20181230_23.14.35.png" />
@@ -995,9 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <marker date="1546090366371" expanded="true" signature="47:76" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,13 +985,6 @@
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1029,23 +996,14 @@
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/fastAutoTest/core/h5/h5Engine.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/uiautomator2/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/gongyi_test_report_20190101_21.18.12.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/gongyi_test_report_20190101_21.20.17.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/gongyi_test_report_20190101_21.18.12.html" />
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/gongyi_test_report_20190101_21.20.17.html" />
+    <entry file="file://D:/Program Files/Anaconda3/envs/python2/Lib/site-packages/uiautomator2/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20190101_22.39.43.png" />
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20190101_22.40.56.png" />
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/html_test_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
+        <state relative-caret-position="8947">
           <caret line="389" column="22" selection-start-line="389" selection-start-column="22" selection-end-line="389" selection-end-column="22" />
         </state>
       </provider>
@@ -1053,74 +1011,81 @@
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/common/network/shortLiveWebSocket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/main_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/lj_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="96" column="39" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
+        <state relative-caret-position="2047">
+          <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
           <folding>
             <element signature="e#24#61#0" expanded="true" />
-            <marker date="1546353679760" expanded="true" signature="724:763" ph="..." />
-            <marker date="1546353679760" expanded="true" signature="1922:1931" ph="..." />
-            <marker date="1546353679760" expanded="true" signature="2180:2434" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files/Anaconda3/envs/python2/Lib/site-packages/uiautomator2/__init__.py">
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="957" column="27" lean-forward="true" selection-start-line="957" selection-start-column="27" selection-end-line="957" selection-end-column="38" />
+        <state relative-caret-position="1449">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5WebSocketDebugUrlFetcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3335">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="115" column="22" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="22" />
+        <state relative-caret-position="4186">
+          <caret line="187" column="8" selection-start-line="187" selection-start-column="8" selection-end-line="187" selection-end-column="8" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
-            <marker date="1546354057841" expanded="true" signature="608:613" ph="..." />
-            <marker date="1546354057841" expanded="true" signature="2291:3267" ph="..." />
+            <marker date="1546396336636" expanded="true" signature="1043:1278" ph="..." />
+            <marker date="1546396336636" expanded="true" signature="1759:1894" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="1771">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/main_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <marker date="1546354057951" expanded="true" signature="63:68" ph="..." />
-            <marker date="1546354057951" expanded="true" signature="492:498" ph="..." />
-            <marker date="1546354057951" expanded="true" signature="4227:4426" ph="..." />
+            <element signature="e#24#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20190101_22.39.43.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20190101_22.40.56.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py">
+    <entry file="file://C:/Python27/Lib/site-packages/uiautomator2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="686">
+          <caret line="1279" column="20" lean-forward="true" selection-start-line="1279" selection-start-column="20" selection-end-line="1279" selection-end-column="20" />
         </state>
       </provider>
     </entry>

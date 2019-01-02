@@ -18,7 +18,6 @@ class ljPage(mainPage):
         self.h5_driver.scroll_To_Xpath(lj_proj_map('项目介绍'))
         self.h5_driver.click_by_text('我要捐款')
         self.h5_driver.click_by_text('我已知情，继续捐赠')
-        self.h5_driver.click_by_text('我已知情，继续捐赠')
         if select == None and money != None:
             self.h5_driver.type_text(lj_proj_map('自定金额'), str(money))
         elif select != None and money == None:
@@ -67,7 +66,7 @@ if __name__ == '__main__':
     # h.open_wx()
     h.load_h5Driver()
     a = ljPage(h)
-    a.lj_donate_money('0.01')
+    h.click_by_text('我已知情，继续捐赠')
 
 
     # print c['爱心经验']
