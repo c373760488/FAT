@@ -63,6 +63,13 @@ class basePage(object):
             else:
                 pass
 
+    def check_user(self):
+        """
+        获取微信个人中心界面用户
+        :return:
+        """
+        pass
+
     def open_txgyh5(self):
         '''
         通过钱包进入公益

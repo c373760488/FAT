@@ -382,6 +382,6 @@ if __name__ == '__main__':
     # runCommand('adb shell pm clear %s' % package_name)
     # a=h5Driver()
     a = uiautomator2.connect()
-    print a.device_info
+    print a().get_text()
     # a.d(className="android.widget.RelativeLayout", instance=14).click()
     # a.d(xpath="//android.widget.TextView[@text='我']").click()

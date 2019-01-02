@@ -4,13 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/gongyi/trunk/tests/test2.py" line="37" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="870d9303-4104-49e7-a5a8-ea4d31e28507" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FAT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FAT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="870d9303-4104-49e7-a5a8-ea4d31e28507" name="Default Changelist" comment="add method get_app_info,u_connect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gongyi/trunk/tests/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/gongyi/trunk/tests/test3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FAT$gongyi_runner.coverage" NAME="gongyi_runner Coverage Results" MODIFIED="1546397393432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/runners" />
+    <SUITE FILE_PATH="coverage/FAT$gongyi_runner.coverage" NAME="gongyi_runner Coverage Results" MODIFIED="1546398420615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/runners" />
     <SUITE FILE_PATH="coverage/FAT$Unittests_for_test2_TgTest1_test_01.coverage" NAME="Unittests for test2.TgTest1.test_01 Coverage Results" MODIFIED="1545312585916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/test" />
     <SUITE FILE_PATH="coverage/FAT$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1546185998549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/tests" />
     <SUITE FILE_PATH="coverage/FAT$box_driver.coverage" NAME="box_driver Coverage Results" MODIFIED="1546351982883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gongyi/trunk/driver" />
@@ -200,48 +197,41 @@
     <session id="1862477363">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="251" />
+          <entry key="py" value="330" />
+          <entry key="txt" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="251" />
+          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="Python" value="330" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
+          <entry key="pyi" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
+          <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/lj_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2047">
-              <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
-              <folding>
-                <element signature="e#24#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -263,12 +253,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4186">
-              <caret line="187" column="8" selection-start-line="187" selection-start-column="8" selection-end-line="187" selection-end-column="8" />
+            <state relative-caret-position="4766">
+              <caret line="240" column="16" lean-forward="true" selection-start-line="240" selection-start-column="16" selection-end-line="240" selection-end-column="16" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
-                <marker date="1546396336636" expanded="true" signature="1043:1278" ph="..." />
-                <marker date="1546396336636" expanded="true" signature="1759:1894" ph="..." />
+                <marker date="1546415447732" expanded="true" signature="1043:1278" ph="..." />
+                <marker date="1546415447732" expanded="true" signature="1759:1894" ph="..." />
               </folding>
             </state>
           </provider>
@@ -277,26 +267,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/test3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://C:/Python27/Lib/site-packages/uiautomator2/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="1279" column="20" lean-forward="true" selection-start-line="1279" selection-start-column="20" selection-end-line="1279" selection-end-column="20" />
+            <state relative-caret-position="207">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/uiautomator2/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28842">
+              <caret line="1279" column="20" selection-start-line="1279" selection-start-column="20" selection-end-line="1279" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1771">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="483">
+              <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+              <folding>
+                <marker date="1546435972789" expanded="true" signature="2176:2277" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -313,11 +306,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="345">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/html_test_runner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12443">
+              <caret line="541" column="8" selection-start-line="541" selection-start-column="8" selection-end-line="541" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -333,12 +335,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\nTime Elapsed</find>
-      <find>Start Time</find>
-      <find>Summary</find>
-      <find>Count</find>
-      <find>Detail</find>
-      <find>fail</find>
       <find>screenshot</find>
       <find>screenshot:</find>
       <find>base</find>
@@ -363,6 +359,12 @@
       <find>TypeError</find>
       <find>adb shell dumpsys</find>
       <find>close_wx</find>
+      <find>HTML_TMPL</find>
+      <find>output</find>
+      <find>result</find>
+      <find>open</find>
+      <find>write</find>
+      <find>run</find>
     </findStrings>
     <replaceStrings>
       <replace>boxDriver</replace>
@@ -419,10 +421,10 @@
         <option value="C:/Python27/Lib/site-packages/fastAutoTest/core/h5/h5Engine.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/tests/lj_test.py" />
-        <option value="$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/tests/test3.py" />
-        <option value="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" />
         <option value="$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py" />
+        <option value="$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py" />
+        <option value="$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py" />
       </list>
     </option>
   </component>
@@ -465,6 +467,28 @@
               <item name="FAT" type="462c0819:PsiDirectoryNode" />
               <item name="gongyi" type="462c0819:PsiDirectoryNode" />
               <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FAT" type="462c0819:PsiDirectoryNode" />
+              <item name="gongyi" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FAT" type="462c0819:PsiDirectoryNode" />
+              <item name="gongyi" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="h5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FAT" type="462c0819:PsiDirectoryNode" />
+              <item name="gongyi" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -484,7 +508,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/github/FAT/gongyi/trunk/driver/box_driver.py&#10;_init_with_serial&#9;null&#9;null&#10;fatDriver&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Pytworkspace/cdauto" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -635,6 +659,21 @@
       <option name="presentableId" value="Default" />
       <updated>1544581566987</updated>
     </task>
+    <task id="LOCAL-00001" summary="add method get_app_info,u_connect">
+      <created>1546398112452</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546398112452</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add method get_app_info,u_connect">
+      <created>1546399062647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546399062647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -682,7 +721,7 @@
     <frame x="7" y="0" width="1913" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25202376" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25472206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -710,6 +749,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add method get_app_info,u_connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add method get_app_info,u_connect" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -766,27 +809,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>131</line>
+          <line>139</line>
           <option name="timeStamp" value="355" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>134</line>
+          <line>142</line>
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>135</line>
+          <line>143</line>
           <option name="timeStamp" value="357" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>138</line>
+          <line>146</line>
           <option name="timeStamp" value="358" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>141</line>
+          <line>149</line>
           <option name="timeStamp" value="359" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -803,31 +846,6 @@
           <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py</url>
           <line>27</line>
           <option name="timeStamp" value="362" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="370" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>75</line>
-          <option name="timeStamp" value="371" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="372" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="375" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="376" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/h5/h5WebSocketDebugUrlFetcher.py</url>
@@ -848,9 +866,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/yj_page.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/yqj_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
@@ -1001,13 +1016,6 @@
     <entry file="file://D:/Program Files/Anaconda3/envs/python2/Lib/site-packages/uiautomator2/__init__.py" />
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20190101_22.39.43.png" />
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/reports/images/20190101_22.40.56.png" />
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/html_test_runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8947">
-          <caret line="389" column="22" selection-start-line="389" selection-start-column="22" selection-end-line="389" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/lib/fastAutoTest/core/common/network/shortLiveWebSocket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -1025,6 +1033,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/typing.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="285" column="8" selection-start-line="285" selection-start-column="8" selection-end-line="285" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/lj_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1449">
@@ -1039,29 +1054,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4186">
-          <caret line="187" column="8" selection-start-line="187" selection-start-column="8" selection-end-line="187" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-            <marker date="1546396336636" expanded="true" signature="1043:1278" ph="..." />
-            <marker date="1546396336636" expanded="true" signature="1759:1894" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/tests/test3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py">
+    <entry file="file://C:/Python27/Lib/site-packages/uiautomator2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="28842">
+          <caret line="1279" column="20" selection-start-line="1279" selection-start-column="20" selection-end-line="1279" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1074,18 +1077,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gongyi/trunk/runners/gongyi_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="345">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/uiautomator2/__init__.py">
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/html_test_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="1279" column="20" lean-forward="true" selection-start-line="1279" selection-start-column="20" selection-end-line="1279" selection-end-column="20" />
+        <state relative-caret-position="12443">
+          <caret line="541" column="8" selection-start-line="541" selection-start-column="8" selection-end-line="541" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/driver/box_driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4766">
+          <caret line="240" column="16" lean-forward="true" selection-start-line="240" selection-start-column="16" selection-end-line="240" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+            <marker date="1546415447732" expanded="true" signature="1043:1278" ph="..." />
+            <marker date="1546415447732" expanded="true" signature="1759:1894" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gongyi/trunk/page/h5/base_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+          <folding>
+            <marker date="1546435972789" expanded="true" signature="2176:2277" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
