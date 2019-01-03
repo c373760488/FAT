@@ -66,7 +66,7 @@ if __name__ == '__main__':
     # h.open_wx()
     h.load_h5Driver()
     a = ljPage(h)
-    h.click_by_text('我已知情，继续捐赠')
+    a.confirm_payment(258085)
 
 
     # print c['爱心经验']

@@ -9,7 +9,7 @@ from gongyi.trunk.page.h5.main_page import mainPage
 
 class ljTest(unittest.TestCase):
 
-    acc = 'wxid_aj8dodrrtty712'
+    acc = 'gongyi-tes'
     pwd = 'gongyi201811'
     nick ='gongyi-test'
 

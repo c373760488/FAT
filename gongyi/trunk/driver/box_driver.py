@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+import re
 import sys
 import time
 import uiautomator2
@@ -29,6 +30,8 @@ class boxDriver(object):
         # time.sleep(1)
         self.d = self.u_connect(self.device)
         self.sdk = int(self.d.device_info['sdk'])
+        self.x=self.d.info['displayWidth']
+        self.y=self.d.info['displayHeight']
 
     def u_connect(self,device):
         """
@@ -141,7 +144,13 @@ class boxDriver(object):
         """
         self.d.app_stop_all(excludes)
 
-
+    def u_get_text(self,**kwargs):
+        """
+        获取定位的text
+        :param kwargs:
+        :return:
+        """
+        return self.d(**kwargs).get_text()
 
     def wx_keyboard(self, key):
         """
@@ -150,27 +159,27 @@ class boxDriver(object):
         :return:
         """
         if key == '1':
-            self.d.click(0.164, 0.671)
+            os.system('adb shell input tap %d %d' % (0.164*int(self.x), 0.671*int(self.y)))
         elif key == '2':
-            self.d.click(0.495, 0.675)
+            os.system('adb shell input tap %d %d' % (0.495*int(self.x), 0.675*int(self.y)))
         elif key == '3':
-            self.d.click(0.835, 0.673)
+            os.system('adb shell input tap %d %d' % (0.835*int(self.x), 0.673*int(self.y)))
         elif key == '4':
-            self.d.click(0.164, 0.762)
+            os.system('adb shell input tap %d %d' % (0.164*int(self.x), 0.762*int(self.y)))
         elif key == '5':
-            self.d.click(0.495, 0.767)
+            os.system('adb shell input tap %d %d' % (0.495*int(self.x), 0.767*int(self.y)))
         elif key == '6':
-            self.d.click(0.831, 0.77)
+            os.system('adb shell input tap %d %d' % (0.831*int(self.x), 0.77*int(self.y)))
         elif key == '7':
-            self.d.click(0.166, 0.858)
+            os.system('adb shell input tap %d %d' % (0.166*int(self.x), 0.858*int(self.y)))
         elif key == '8':
-            self.d.click(0.504, 0.858)
+            os.system('adb shell input tap %d %d' % (0.504*int(self.x), 0.858*int(self.y)))
         elif key == '9':
-            self.d.click(0.828, 0.858)
+            os.system('adb shell input tap %d %d' % (0.828*int(self.x), 0.858*int(self.y)))
         elif key == '0':
-            self.d.click(0.49, 0.955)
+            os.system('adb shell input tap %d %d' % (0.49*int(self.x), 0.955*int(self.y)))
         elif key == 'b':
-            self.d.click(0.84, 0.949)
+            os.system('adb shell input tap %d %d' % (0.84*int(self.x), 0.949*int(self.y)))
         else:
             raise TypeError('key error')
 
@@ -203,7 +212,7 @@ class h5Driver(boxDriver):
 
     def get_text_by_xp(self, xp):
         """
-        通过xpath定位点击
+        通过xpath定位获取text
         :param xp:
         :return:
         """
@@ -380,8 +389,9 @@ class wxDriver(boxDriver):
 if __name__ == '__main__':
     # package_name = 'com.tencent.mm'
     # runCommand('adb shell pm clear %s' % package_name)
-    # a=h5Driver()
-    a = uiautomator2.connect()
-    print a().get_text()
+    a=uiautomator2.connect_usb()
+    a.swipe(330,800,330,500,steps=10)
+
+
     # a.d(className="android.widget.RelativeLayout", instance=14).click()
     # a.d(xpath="//android.widget.TextView[@text='我']").click()
