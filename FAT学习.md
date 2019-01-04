@@ -10,9 +10,21 @@
 `adb shell pm list packages`</br>
 5.结束进程</br>
 `adb shell ps |find "uiautomator"`      
-`adb shell kill <PID>`
-6.删除包
-`adb uninstall com.github.uiautomator`
+`adb shell kill <PID>`</br>
+6.删除包</br>
+`adb uninstall com.github.uiautomator`</br>
+7.root对系统文件可读写，设置进入adb默认root</br>
+`mount -o remount rootfs /`</br>
+`修改default.prop中ro.secure设为0，persist.service.adb.enable设为1`</br>
+8.putty连接adb
+
+	下载 adbputty http://github.com/sztupy/adbputty/downloads
+	连接方式选择 adb
+	host上填"transport-usb"  引号不要(或者是别的连接字符串 具体查看 adb sockey interface 的文档)
+	端口填 5037
+
+
+
 
 ###uiautomator
 
