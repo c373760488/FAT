@@ -1,5 +1,56 @@
 # -*- coding: utf-8 -*-
 
+
+def wx_login_map(key):
+    """
+    微信登录路由
+    :param key:
+    :return:
+    """
+    route = {
+        '登录':{"resourceId":"com.tencent.mm:id/e0y"},
+        '用微信号登录': {"resourceId":"com.tencent.mm:id/cmv"},
+        '账号': {"resourceId":"com.tencent.mm:id/ka"},
+        '密码': {"resourceId":"com.tencent.mm:id/ka", "text":"请填写密码"},
+        '确认登录': {"resourceId":"com.tencent.mm:id/cmw"},
+        '账号密码错误确定':{"resourceId":"com.tencent.mm:id/ayb"},
+        '更多': {"resourceId":"com.tencent.mm:id/cn3"},
+        '登录其他账号': {"resourceId":"com.tencent.mm:id/ct"},
+
+    }
+    return route[key]
+
+def wx_home_map(key):
+    """
+    微信首页路由
+    :param key:
+    :return:
+    """
+    route = {
+        '我': {"resourceId":"com.tencent.mm:id/d3r", "className":"android.widget.LinearLayout", "instance":3},
+        '通讯录': {"resourceId": "com.tencent.mm:id/d3r", "className": "android.widget.LinearLayout", "instance": 2},
+        '发现': {"resourceId":"com.tencent.mm:id/d3r", "className":"android.widget.LinearLayout", "instance":1},
+        '微信': {"resourceId":"com.tencent.mm:id/d3r","className":"android.widget.LinearLayout", "instance":0},
+    }
+    return route[key]
+
+def wx_user_center_map(key):
+    """
+    微信个人中心路由
+    :param keu:
+    :return:
+    """
+    route = {
+        '微信号': {"resourceId": "com.tencent.mm:id/d7y"},
+        '支付':{"resourceId":"android:id/title", "text":"支付"},
+        '腾讯公益': {"resourceId":"com.tencent.mm:id/cxm", "text":"腾讯公益"},
+        '设置': {"resourceId":"android:id/title", "text":"设置"},
+        '退出': {"resourceId":"android:id/title", "text":"退出"},
+        '退出登录': {"resourceId":"com.tencent.mm:id/ct"},
+        '退出（提醒）': {"resourceId":"com.tencent.mm:id/ayb"},
+    }
+    return route[key]
+
 def main_page_map(key):
     """
     首页路由
@@ -8,7 +59,7 @@ def main_page_map(key):
     :return:
     """
     route = {
-
+        '腾讯公益标题': {"resourceId": "android:id/text1"},
     }
     return route[key]
 

@@ -9,9 +9,11 @@ from gongyi.trunk.page.h5.main_page import mainPage
 
 class ljTest(unittest.TestCase):
 
-    acc = 'gongyi-tes'
-    pwd = 'gongyi201811'
-    nick ='gongyi-test'
+    # acc = 'gongyi-test'
+    # pwd = 'gongyi201811'
+    # nick ='gongyi-test'
+    acc='373760488'
+    pwd='feifei900'
 
     @classmethod
     def setUpClass(cls):

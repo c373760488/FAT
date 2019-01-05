@@ -3,6 +3,7 @@ import re
 import time
 
 from gongyi.trunk.driver.box_driver import h5Driver
+from gongyi.trunk.page.h5.page_map import *
 
 
 class basePage(object):
@@ -37,26 +38,24 @@ class basePage(object):
         :param :
         :return:
         """
-        if self.h5_driver.sdk >= 28:
-            times = 0
-            while not self.h5_driver.u_exists(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout",
-                                              instance=3) and not self.h5_driver.u_exists(text="登录") and times < 10:
-                time.sleep(1)
-                times += 1
-            if not self.h5_driver.u_exists(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout",
-                                           instance=3):
-                return True
-            else:
-                return False
+
+        times = 0
+        while not self.h5_driver.u_exists(**wx_home_map("我")) and not self.h5_driver.u_exists(**wx_login_map("登录")) and times < 10:
+            time.sleep(1)
+            times += 1
+        if not self.h5_driver.u_exists(**wx_login_map("登录")):
+            return True
         else:
-            times = 0
-            while not self.h5_driver.u_exists(resourceId="com.tencent.mm:id/cw2", text=u"我") and not self.h5_driver.u_exists(text="登录") and times < 10:
-                time.sleep(1)
-                times += 1
-            if self.h5_driver.u_exists(resourceId="com.tencent.mm:id/cw2", text=u"我"):
-                return  True
-            else:
-                return False
+            return False
+
+            # times = 0
+            # while not self.h5_driver.u_exists(**wx_home_map("我")) and not self.h5_driver.u_exists(**wx_login_map("登录")) and times < 10:
+            #     time.sleep(1)
+            #     times += 1
+            # if self.h5_driver.u_exists(**wx_home_map("我")):
+            #     return  True
+            # else:
+            #     return False
 
     def login_wx(self,acc,pwd):
         """
@@ -65,13 +64,13 @@ class basePage(object):
         :param pwd:
         :return:
         """
-        if self.h5_driver.u_exists(text="登录"):
-            self.h5_driver.u_click(text="登录")
+        if self.h5_driver.u_exists(**wx_login_map("登录")):
+            self.h5_driver.u_click(**wx_login_map("登录"))
         else:
-            self.h5_driver.u_click(text="用微信号/QQ号/邮箱登录",timeout=10)
-            self.h5_driver.u_send_keys(acc,resourceId="com.tencent.mm:id/ji")
-            self.h5_driver.u_set_text(pwd,resourceId="com.tencent.mm:id/ji", className="android.widget.EditText", instance=1)
-            self.h5_driver.u_click(text='登录')
+            self.h5_driver.u_click(timeout=10, **wx_login_map("用微信号登录"))
+            self.h5_driver.u_send_keys(acc, **wx_login_map("账号"))
+            self.h5_driver.u_set_text(pwd, **wx_login_map("密码"))
+            self.h5_driver.u_click(**wx_login_map("确认登录"))
 
 
     def go_wx_user_center(self):
@@ -80,16 +79,16 @@ class basePage(object):
         :return:
         """
         if self.h5_driver.sdk>=28:
-            self.h5_driver.u_click(resourceId="com.tencent.mm:id/cw3", className="android.widget.LinearLayout", instance=3)
+            self.h5_driver.u_click(**wx_home_map("我"))
         else:
-            self.h5_driver.u_click(resourceId="com.tencent.mm:id/cw2", text=u"我")
+            self.h5_driver.u_click(**wx_home_map("我"))
 
     def check_user(self,acc):
         """
         查询是不是指定登录的账号
         :return:
         """
-        user=self.h5_driver.u_get_text(resourceId="com.tencent.mm:id/czz")
+        user=self.h5_driver.u_get_text(**wx_user_center_map("微信号"))
         if acc==re.search('[a-zA-Z0-9_\-]{6,30}',user).group():
             return True
         else:
@@ -100,14 +99,14 @@ class basePage(object):
         退出登录
         :return:
         """
-        self.h5_driver.u_click(resourceId="android:id/title", text=u"设置")
+        self.h5_driver.u_click(**wx_user_center_map("设置"))
         time.sleep(1)
         self.h5_driver.d.swipe(330,800,330,500,steps=10)
-        self.h5_driver.u_click(resourceId="android:id/title", text=u"退出")
-        self.h5_driver.u_click(resourceId="com.tencent.mm:id/jr") #退出登录
-        self.h5_driver.u_click(resourceId="com.tencent.mm:id/au_",timeout=10)  # 退出
-        self.h5_driver.u_click(resourceId="com.tencent.mm:id/chc")#更多
-        self.h5_driver.u_click(resourceId="com.tencent.mm:id/cj")#登录其他账号
+        self.h5_driver.u_click(**wx_user_center_map("退出"))
+        self.h5_driver.u_click(**wx_user_center_map("退出登录")) #退出登录
+        self.h5_driver.u_click(timeout=10,**wx_user_center_map("退出（提醒）"))  # 退出登录提醒
+        self.h5_driver.u_click(**wx_login_map("更多"))#更多
+        self.h5_driver.u_click(**wx_login_map("登录其他账号"))#登录其他账号
 
 
     def login_with_user(self,acc,pwd):
@@ -124,8 +123,10 @@ class basePage(object):
             else:
                 self.logout_wx()
                 self.login_wx(acc,pwd)
+                self.go_wx_user_center()
         else:
             self.login_wx(acc,pwd)
+            self.go_wx_user_center()
 
 
     def open_txgyh5(self):
@@ -135,13 +136,13 @@ class basePage(object):
         '''
         times=0
 
-        self.h5_driver.u_click(text='钱包')
-        self.h5_driver.u_click(timeout=5,text='腾讯公益')
-        while not self.h5_driver.u_exists(text='腾讯公益',resourceId='android:id/text1') and times<20:
+        self.h5_driver.u_click(**wx_user_center_map("支付"))
+        self.h5_driver.u_click(timeout=5,**wx_user_center_map("腾讯公益"))
+        while not self.h5_driver.u_exists(**main_page_map("腾讯公益标题")) and times<20:
             time.sleep(1)
             times += 1
             if times >6:
-                self.h5_driver.u_click(text='腾讯公益')
+                self.h5_driver.u_click(**wx_user_center_map("腾讯公益"))
 
     def open_gyh5(self,acc,pwd):
         """

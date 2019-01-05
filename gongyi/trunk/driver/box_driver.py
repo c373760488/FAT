@@ -101,14 +101,14 @@ class boxDriver(object):
         """
         self.d(**kwargs).send_keys(text)
 
-    def u_set_text(self, text, **kwargs):
+    def u_set_text(self, msg, **kwargs):
         """
          uiautomaor2 ,输入text
         :param text:
         :param kwargs:
         :return:
         """
-        self.d(**kwargs).set_text(text)
+        self.d(**kwargs).set_text(msg)
 
     def u_stop_app(self,app):
         """
