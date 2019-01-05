@@ -2,18 +2,18 @@
 import re
 import time
 
-from gongyi.trunk.driver.box_driver import h5Driver
+from gongyi.trunk.driver.box_driver import boxDriver
 from gongyi.trunk.page.h5.page_map import *
 
 
 class basePage(object):
 
-    def __init__(self,h5Driver):
+    def __init__(self,boxDriver):
         """
         实例化h5Driver
         :param h5Driver:
         """
-        self.h5_driver = h5Driver
+        self.h5_driver = boxDriver
 
     def close_wx(self):
         """
@@ -28,7 +28,7 @@ class basePage(object):
         '''
         self.h5_driver.d.unlock()
         self.close_wx()
-        self.h5_driver.d.app_start('com.tencent.mm')
+        self.h5_driver.u_start_app('com.tencent.mm')
 
     def check_is_login(self):
         """
@@ -161,14 +161,14 @@ class basePage(object):
         跳转到公益首页
         :return:
         """
-        self.h5_driver.open_url('http://ssl.gongyi.qq.com/m/weixin/index2_gzzh.htm')
+        self.h5_driver.h5_open_url('http://ssl.gongyi.qq.com/m/weixin/index2_gzzh.htm')
 
     def go_test_proj(self):
         """
         进入测试项目
         :return:
         """
-        self.h5_driver.open_url('http://ssl.gongyi.qq.com/m/weixin/detail.htm?pid=200016&dbg=2')
+        self.h5_driver.h5_open_url('http://ssl.gongyi.qq.com/m/weixin/detail.htm?pid=200016&dbg=2')
 
     def load_h5_driver(self):
         """
@@ -196,7 +196,7 @@ class basePage(object):
             time.sleep(0.5)
             times+=1
         for i in str(paypwd):
-            self.h5_driver.wx_keyboard(i)
+            self.wx_keyboard(i)
         try:
             #小米手机有时候跳出支付风险提示
             self.h5_driver.u_click(timeout=7,text='仍然支付')
@@ -223,5 +223,33 @@ class basePage(object):
         self.h5_driver.u_click(resourceId="com.tencent.mm:id/cj", text=u"发送给朋友")
         self.h5_driver.u_click(resourceId="com.tencent.mm:id/jc")
 
-
-
+    def wx_keyboard(self, key):
+        """
+        微信支付键盘
+        :param key:
+        :return:
+        """
+        if key == '1':
+            self.h5_driver.u_tap( (0.164*self.h5_driver.x), (0.671*self.h5_driver.y))
+        elif key == '2':
+            self.h5_driver.u_tap( (0.495*self.h5_driver.x), (0.675*self.h5_driver.y))
+        elif key == '3':
+            self.h5_driver.u_tap( (0.835*self.h5_driver.x), (0.673*self.h5_driver.y))
+        elif key == '4':
+            self.h5_driver.u_tap( (0.164*self.h5_driver.x), (0.762*self.h5_driver.y))
+        elif key == '5':
+            self.h5_driver.u_tap( (0.495*self.h5_driver.x), (0.767*self.h5_driver.y))
+        elif key == '6':
+            self.h5_driver.u_tap( (0.831*self.h5_driver.x), (0.77*self.h5_driver.y))
+        elif key == '7':
+            self.h5_driver.u_tap( (0.166*self.h5_driver.x), (0.858*self.h5_driver.y))
+        elif key == '8':
+            self.h5_driver.u_tap( (0.504*self.h5_driver.x), (0.858*self.h5_driver.y))
+        elif key == '9':
+            self.h5_driver.u_tap( (0.828*self.h5_driver.x), (0.858*self.h5_driver.y))
+        elif key == '0':
+            self.h5_driver.u_tap( (0.49*self.h5_driver.x), (0.955*self.h5_driver.y))
+        elif key == 'b':
+            self.h5_driver.u_tap( (0.84*self.h5_driver.x), (0.949*self.h5_driver.y))
+        else:
+            raise TypeError('key error')

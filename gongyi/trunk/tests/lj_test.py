@@ -2,7 +2,7 @@
 from gongyi.trunk.lib import unittest
 from time import sleep
 
-from gongyi.trunk.driver.box_driver import boxDriver, h5Driver
+from gongyi.trunk.driver.box_driver import boxDriver
 from gongyi.trunk.page.h5.lj_page import ljPage
 from gongyi.trunk.page.h5.main_page import mainPage
 
@@ -22,7 +22,7 @@ class ljTest(unittest.TestCase):
         打开公益公众号
         :return:
         """
-        cls.h5_driver = h5Driver()
+        cls.h5_driver = boxDriver()
         cls.lj_driver = ljPage(cls.h5_driver)
         cls.lj_driver.open_gyh5(cls.acc,cls.pwd)
         cls.lj_driver.load_h5_driver()   #在打开h5页面以后加载fat_h5模块
@@ -46,7 +46,7 @@ class ljTest(unittest.TestCase):
         :return:
         """
         #失败截图功能
-        self.h5_driver.getImage(self.nowTime)
+        self.h5_driver.h5_getImage(self.nowTime)
         #跳转到公益首页
         self.lj_driver.reopen_txgyh5()
 
